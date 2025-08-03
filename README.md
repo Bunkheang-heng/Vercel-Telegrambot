@@ -9,6 +9,10 @@ A sophisticated Telegram bot that serves as a personal AI assistant for Heng Bun
 - **Strict Topic Control**: Only responds to questions about Kheang, redirects off-topic questions
 - **Professional Formatting**: Clean HTML formatting with bold project names and proper links
 - **Animated Loading**: Shows loading indicators while processing requests
+- **Interactive Buttons**: Quick access buttons for common questions
+- **Input Validation**: Sanitizes and validates user inputs for security
+- **Queue System**: Handles multiple concurrent users efficiently
+- **Analytics**: Tracks usage patterns and performance metrics
 
 ### 🏗️ **Technical Features**
 - **Modular Architecture**: Clean separation of concerns with dedicated services
@@ -17,12 +21,19 @@ A sophisticated Telegram bot that serves as a personal AI assistant for Heng Bun
 - **Error Handling**: Comprehensive error recovery and user feedback
 - **Activity Logging**: Full monitoring and analytics
 - **Session Management**: User conversation tracking
+- **Queue Management**: Priority-based request queuing for scalability
+- **Input Sanitization**: Security-first approach to user inputs
+- **Performance Monitoring**: Real-time analytics and metrics
+- **Health Checks**: System status monitoring and diagnostics
 
 ### 🚀 **Performance**
 - **Fast Responses**: Optimized AI model (gemini-1.5-flash-8b)
-- **Scalable**: Handles multiple concurrent users
+- **Scalable**: Handles multiple concurrent users with queue system
 - **Memory Efficient**: Automatic cleanup of old data
 - **Production Ready**: Enterprise-grade architecture
+- **Concurrent Processing**: Up to 3 simultaneous requests
+- **Smart Caching**: Reduces API calls and improves response times
+- **Priority Queuing**: Important requests get processed first
 
 ## 🛠️ Setup
 
@@ -97,10 +108,29 @@ src/
 - User session management
 - Context-aware responses
 
-#### **Logger**
-- Activity tracking and analytics
-- Error monitoring
+#### **QueueService**
+- Priority-based request queuing
+- Concurrent processing (up to 3 simultaneous requests)
+- Request timeout handling
+- Queue monitoring and management
+
+#### **AnalyticsService**
+- Real-time usage tracking
 - Performance metrics
+- Popular questions analysis
+- Error rate monitoring
+
+#### **InputValidator**
+- Message validation and sanitization
+- Security threat detection
+- Question categorization
+- User input safety
+
+#### **KeyboardHandler**
+- Interactive button management
+- Quick access to common information
+- Professional response formatting
+- Enhanced user experience
 
 #### **PersonalInfoService**
 - Singleton pattern for data access
@@ -150,8 +180,19 @@ The bot includes comprehensive monitoring:
 ## 🎯 Usage
 
 ### **Bot Commands**
-- `/start` - Welcome message with bot capabilities
-- `/help` - Detailed help information
+- `/start` - Welcome message with interactive buttons
+- `/help` - Detailed help information with quick access buttons
+
+### **Interactive Features**
+- **Quick Access Buttons**: Click buttons for instant access to:
+  - 📋 Projects
+  - 🎓 Education  
+  - 🏆 Awards
+  - 💼 Experience
+  - 🛠️ Skills
+  - 📞 Contact
+  - 🤝 Volunteer
+  - ❓ Help
 
 ### **Example Interactions**
 
@@ -168,8 +209,8 @@ The bot includes comprehensive monitoring:
 
 ### **Response Format**
 ```
-• <b>QuickResume</b>: Web app to generate professional resumes using Next.js and Firebase with AI-assisted templates. (https://quick-resume-af9c.vercel.app/)
-• <b>STEMii</b>: STEM learning platform with AI-based self-assessment tools using ReactJS, NodeJS, and Firebase. (https://stemii1.web.app/)
+• <b>QuickResume</b>: Web app to generate professional resumes using Next.js and Firebase with AI-assisted templates. (<a href='https://quick-resume-af9c.vercel.app/'>View Project</a>)
+• <b>STEMii</b>: STEM learning platform with AI-based self-assessment tools using ReactJS, NodeJS, and Firebase. (<a href='https://stemii1.web.app/'>View Project</a>)
 ```
 
 ## 🔧 Configuration
@@ -192,17 +233,23 @@ TEMPERATURE: 0.7
 ## 🛡️ Security & Performance
 
 - **Rate Limiting**: Prevents abuse and controls costs
-- **Input Validation**: Sanitizes user inputs
+- **Input Validation**: Sanitizes user inputs and prevents malicious content
 - **Error Recovery**: Graceful handling of API failures
 - **Memory Management**: Automatic cleanup prevents memory leaks
 - **Timeout Handling**: Prevents hanging requests
+- **Queue Management**: Prevents system overload with priority-based queuing
+- **Security Scanning**: Detects and blocks malicious input patterns
+- **Request Sanitization**: Removes HTML tags and dangerous content
 
 ## 📈 Scalability
 
-- **Concurrent Users**: Supports hundreds of simultaneous users
+- **Concurrent Users**: Supports hundreds of simultaneous users with queue system
 - **Caching**: Reduces API calls and improves response times
 - **Modular Design**: Easy to add new features or modify existing ones
 - **Monitoring**: Real-time insights into bot performance
+- **Queue Processing**: Handles up to 3 concurrent requests with priority queuing
+- **Analytics**: Tracks usage patterns for optimization
+- **Health Monitoring**: Continuous system status checks
 
 ## 🐛 Troubleshooting
 
@@ -212,15 +259,23 @@ TEMPERATURE: 0.7
    - Check if webhook is properly set up
    - Verify environment variables in Vercel dashboard
    - Check bot logs for errors
+   - Test health endpoint: `/api/health`
 
 2. **Rate limit exceeded**
    - Wait for the rate limit period to reset
    - Check your usage patterns
+   - Use interactive buttons for faster access
 
 3. **AI responses slow**
    - Check Gemini API quota
    - Verify network connectivity
    - Monitor response times in logs
+   - Check queue status and concurrent users
+
+4. **Input validation errors**
+   - Ensure messages are under 1000 characters
+   - Avoid special characters or HTML tags
+   - Check for malicious content patterns
 
 ### **Debug Mode**
 Enable detailed logging by checking the console output for activity logs.

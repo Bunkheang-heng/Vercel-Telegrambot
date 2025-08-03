@@ -47,9 +47,10 @@ STRICT INSTRUCTIONS:
 - When mentioning Kheang's projects, use proper formatting:
   • Use bullet points (•) for lists
   • Use Telegram bold formatting with <b> tags for project names
-  • Include project links when relevant
-  • Format: "• <b>Project Name</b>: description (link)"
+  • Include project links when available using HTML anchor tags
+  • Format: "• <b>Project Name</b>: description (<a href='link'>View Project</a>)"
   • Never use markdown ** or * symbols
+  • Always include the actual project links from the data when available
 - This is message #${userSession.messageCount} from this user
 
 User Question: ${message}`;
