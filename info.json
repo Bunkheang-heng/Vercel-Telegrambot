@@ -1,0 +1,136 @@
+{
+    "name": "Heng Bunkheang",
+    "contact": {
+      "email": "bunkheangheng99@gmail.com",
+      "phone": "097-355-6059",
+      "location": "Phnom Penh, Cambodia",
+      "profiles": ["LinkedIn", "GitHub"]
+    },
+    "experience": [
+      {
+        "title": "Developer",
+        "organization": "Save the Children Cambodia",
+        "location": "Phnom Penh, Cambodia",
+        "date": "Jan 2024",
+        "description": [
+          "Developed a digital platform for the Positive Parenting Project using ReactJS and Firebase.",
+          "Built a chatbot with Python and Flask to improve engagement through Messenger.",
+          "Designed both frontend and backend systems, ensuring responsive user interfaces and optimized data flow."
+        ]
+      },
+      {
+        "title": "Online Education Participant",
+        "organization": "Asean Cyber Shield",
+        "date": "April 2024 - May 2025",
+        "description": [
+          "Explored various security topics (real-world web exploitation, system exploitation, digital forensics, malware analysis, and incident response).",
+          "Built a phishing detection system using ML and Total Virus Scan API.",
+          "Selected among 14 out of 300 students to join a bootcamp in South Korea."
+        ]
+      }
+    ],
+    "volunteer": [
+      {
+        "title": "Technical Team Member",
+        "event": "Mekong Tech Festival",
+        "location": "Phnom Penh, Cambodia",
+        "date": "Dec 2023",
+        "description": [
+          "Supported booth setup and technical troubleshooting.",
+          "Assisted in logistical operations."
+        ]
+      },
+      {
+        "title": "Event Organizer",
+        "event": "Rice of Love Football Event",
+        "location": "Phnom Penh, Cambodia",
+        "date": "July 2022",
+        "description": [
+          "Organized a football tournament for donations.",
+          "Managed outreach and scheduling with teams and sponsors."
+        ]
+      },
+      {
+        "title": "Volunteer, Food Team",
+        "event": "Earth Hour Campaign",
+        "location": "Phnom Penh, Cambodia",
+        "date": "March 2024",
+        "description": [
+          "Prepared and distributed food to volunteers and participants."
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "name": "QuickResume",
+        "status": "Live Site",
+        "link": "https://quick-resume-af9c.vercel.app/",
+        "description": "Web app to generate professional resumes using Next.js and Firebase with AI-assisted templates."
+      },
+      {
+        "name": "STEMii",
+        "status": "Live Site",
+        "link": "https://stemii1.web.app/",
+        "description": "STEM learning platform with AI-based self-assessment tools using ReactJS, NodeJS, and Firebase."
+      },
+      {
+        "name": "SakRean",
+        "status": "Live Site",
+        "link": "https://sakrean-8b632.web.app/",
+        "description": "Career-matching and academic guidance platform for high school students. Built using ReactJS, NodeJS, and Firebase."
+      },
+      {
+        "name": "Phishing Detection System",
+        "status": "Live Site",
+        "link": "https://vast-eyrie-19878-8ab3229ff3bf.herokuapp.com/",
+        "description": "Flask web app using ML and NLP to block phishing emails."
+      },
+      {
+        "name": "Portfolio Website",
+        "status": "Live Site",
+        "link": "https://bunkheang-heng.github.io/Portfolio1",
+        "description": "Personal site using HTML, CSS, and JavaScript."
+      },
+      {
+        "name": "Portfolio Website V2",
+        "status": "Live Site",
+        "link": "https://kheang-porfolio-bunkheang-heng-bunkheang-hengs-projects.vercel.app",
+        "description": "Version 2 using Next.js, Tailwind CSS, Gemini AI, and Google Drive."
+      },
+      {
+        "name": "Khmer Dev",
+        "link": "https://github.com/orgs/KhmerDevs/repositories",
+        "description": "Free coding education website in Khmer. Backend: NestJS, PostgreSQL, Redis, Docker. Frontend: ReactJS, Tailwind CSS."
+      },
+      {
+        "name": "KaksekAI",
+        "link": "https://github.com/orgs/KaksekAi/repositories",
+        "description": "Smart agriculture mobile app in Khmer with land measurement, AI crop analysis, offline support. Built using Flutter, Gemini APIs, Google Maps, and Firebase."
+      }
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "Fort Hays State University (Partnership with AUPP)"
+      },
+      {
+        "degree": "Bachelor of Information Technology Management",
+        "institution": "American University of Phnom Penh"
+      }
+    ],
+    "skills": [
+      "JavaScript", "HTML", "CSS", "ReactJS", "Next.js", "Nest.js", "Express.js", "Python", "Flask",
+      "Firebase", "SQL", "Postgres", "MongoDB", "Tailwind CSS", "Git", "RESTful APIs", "AI Integration",
+      "Docker", "AWS", "Google Cloud"
+    ],
+    "awards_competitions": [
+      "Cybersecurity Capture the Flag 2024—Top 2 Winner",
+      "Clean Energy Hackathon 2023—Top 3 Winner",
+      "Turing Hackathon 2023—Top 5 Winner",
+      "Novathon by Save the Children 2023—Top 5 Winner",
+      "Ideathon 2023—Top 10 Winner",
+      "Unientrepreneur 2024—Top 10 Winner",
+      "Sandbox Competition 2024—Top 10 Winner"
+    ]
+  }
+  
